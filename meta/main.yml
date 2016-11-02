@@ -1,0 +1,21 @@
+---
+# file: oracle-java/meta/main.yml
+#
+# meta file
+#
+
+galaxy_info:
+  author: Pedro Salgado, Anton Markelov
+  description: Role to install Oracle Java for RedHat/CentOS.
+  license: BSD
+  min_ansible_version: 1.9.4
+  platforms:
+    - name: CentOS
+      versions:
+        - 7
+  galaxy_tags:
+    - development
+    - java
+    - system
+
+dependencies: []
