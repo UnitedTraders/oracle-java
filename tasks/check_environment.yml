@@ -35,7 +35,7 @@
 
 - debug:
     var="{{ item }}"
-  when: "{{ item }} is defined and debug | default(false)"
+  when: "item is defined and debug | default(false)"
   with_items:
     - oracle_java_installed
     - oracle_java_task_installed
