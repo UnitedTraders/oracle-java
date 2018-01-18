@@ -15,6 +15,7 @@ oracle_java_version_string: "1.{{ oracle_java_version }}.0_{{ oracle_java_versio
 
 oracle_java_home: "/usr/java/jdk1.{{ oracle_java_version }}.0_{{ oracle_java_version_update }}"
 
+oracle_java_upgrade_package: no
 oracle_java_os_supported: yes
 oracle_java_rpm_validate_certs: yes
 
