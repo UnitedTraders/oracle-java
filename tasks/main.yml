@@ -5,11 +5,11 @@
 #
 
 - name: check host environment
-  include: check_environment.yml
+  import_tasks: check_environment.yml
 
-- include: debug.yml
+- import_tasks: debug.yml
   when: debug | default(false)
   tags: debug
 
-- include: install.yml
+- import_tasks: install.yml
   when: (oracle_java_upgrade_package == true) or (oracle_java_installed == false)
